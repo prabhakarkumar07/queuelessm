@@ -1,0 +1,79 @@
+{
+  "expo": {
+    "name": "QueueLess",
+    "slug": "queueless",
+    "updates": {
+      "enabled": false,
+      "fallbackToCacheTimeout": 0
+    },
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "",
+    "userInterfaceStyle": "dark",
+    "scheme": "queueless",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "in.queueless.app",
+      "associatedDomains": ["applinks:queueless.in"],
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "QueueLess uses your location to find nearby shops."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0f172a"
+      },
+      "package": "in.queueless.app",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "queueless.in",
+              "pathPrefix": "/"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ],
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "color": "#f97316"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "QueueLess uses your location to show nearby shops."
+        }
+      ]
+    ],
+    "extra": {
+      "apiUrl": "http://localhost:8080",
+      "wsUrl": "https://api.queueless.in/ws",
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "your-eas-project-id"
+      }
+    }
+  }
+}
