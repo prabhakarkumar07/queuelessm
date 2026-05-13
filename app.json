@@ -66,8 +66,8 @@
       ]
     ],
     "extra": {
-      "apiUrl": "http://localhost:8080",
-      "wsUrl": "https://api.queueless.in/ws",
+      "apiUrl": "https://queueless-api-production.up.railway.app",
+      "wsUrl": "https://queueless-api-production.up.railway.app/ws",
       "router": {
         "origin": false
       },
