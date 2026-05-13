@@ -15,11 +15,15 @@
       "resizeMode": "contain",
       "backgroundColor": "#0f172a"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "in.queueless.app",
-      "associatedDomains": ["applinks:queueless.in"],
+      "associatedDomains": [
+        "applinks:queueless.in"
+      ],
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "QueueLess uses your location to find nearby shops."
       }
@@ -40,7 +44,10 @@
               "pathPrefix": "/"
             }
           ],
-          "category": ["BROWSABLE", "DEFAULT"]
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
         }
       ],
       "permissions": [
@@ -63,7 +70,8 @@
         {
           "locationWhenInUsePermission": "QueueLess uses your location to show nearby shops."
         }
-      ]
+      ],
+      "expo-font"
     ],
     "extra": {
       "apiUrl": "https://queueless-api-production.up.railway.app",
